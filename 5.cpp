@@ -31,14 +31,14 @@ void intercalacion(int vectorA[], int vectorB[], int lenA,  int lenB, int RES[])
 
 int main() {
 
-    int bermejo[]={98,67,90};
+    int bermejo[]={98,67,100};
     int tarija[]={99,55,66,78};
 
     // OBTENER TAMANIO para el vector bermejo
-    int B_LEN=end(bermejo)-begin(bermejo);
+    int B_LEN=sizeof(bermejo)/sizeof(bermejo[0]);
 
     // OBTENER TAMANIO para el vector tarija
-    int T_LEN=end(tarija)-begin(tarija);
+    int T_LEN=sizeof(tarija)/sizeof(tarija[0]);
 
     int vectorMezcla[B_LEN+T_LEN]; // DEFINIENDO vector para unirlos
 
