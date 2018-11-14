@@ -41,7 +41,7 @@ int main() {
     char vec[]={'t', 'r', 'a', 'y', 's', 'u', 'r', 't', 'b', 'x', 'y'};
 
     // OBTENER TAMANIO para el vector
-    int LEN=end(vec)-begin(vec);
+    int LEN=sizeof(vec)/sizeof(vec[0]);
 
     burbuja( vec , LEN ); // ORDENAR
 

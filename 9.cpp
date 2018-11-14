@@ -43,7 +43,7 @@ int main() {
 
     int vec[]={8, 7, 5, 2, 4, 9, 3, 4, 7, 2, 6, 3, 6, 2, 5, 8, 7, 9}  ;
     // OBTENER TAMANIO para el vector
-    int LEN=sizeof(vec)/sizeof(*vec);
+    int LEN=sizeof(vec)/sizeof(vec[0]);
 
     ordenarParesImpares( vec , LEN );
 

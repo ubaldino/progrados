@@ -8,7 +8,7 @@ void burbujaOrdenAlfabeto(string vector[],int LEN){
     string A , B;
     for( i = 0 ; i < LEN ; i++ ) {
         for( j = 0 ; j < LEN-1 ; j++ ) {
-            if(strcmp(vector[j].c_str(), vector[j+1].c_str()) > 0 ) {
+            if( strcmp(vector[j].c_str() , vector[j+1].c_str() ) > 0  ) {
                 temp        = vector[j];
                 vector[j]   = vector[j+1];
                 vector[j+1] = temp;
@@ -40,13 +40,14 @@ void ordenarCadenas(string vec[], int n){
 }
 
 int main() {
-
-    string vec[]={
-        "uno", "dos", "tres", "cuatro", "cinco"
-      , "seis", "siete", "ocho", "nueve", "diez"
-    };
+    int LEN;
+    cin >> LEN;
+    string vec[LEN];
     // OBTENER TAMANIO para el vector
-    int LEN=sizeof(vec)/sizeof(*vec);
+
+    for (int i = 0; i < LEN;i++ ) {
+        cin >> vec[i];
+    }
 
     ordenarCadenas( vec , LEN );
 
